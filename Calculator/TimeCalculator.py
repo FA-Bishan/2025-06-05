@@ -4,11 +4,10 @@ import math
 
 def MinToHour(minuite):
     hour = 0
-    if (minuite < 60):
+    if (int(minuite) < 60):
         hour = minuite/60
-        return (f"{minuite} is {hour} hours.")
+        return hour, 0
     else:
-        hour = math.floor(minuite/60)
-        remainingMins = minuite%60
-        return (f"{minuite} is {hour} hours, and {remainingMins}mins.")
-        
+        hour = math.floor(int(minuite)/60)
+        remainingMins = int(minuite)%60
+        return hour, remainingMins
