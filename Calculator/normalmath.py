@@ -19,5 +19,5 @@ def yaku(number1,number2,operator):
 
 
 
-var = yaku(1,2,"/")
-print(var)
+# var = yaku(1,2,"/")
+# print(var)

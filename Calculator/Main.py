@@ -1,5 +1,6 @@
 #this one is the main page that takes in what the user wants, and outputs math
 import TimeCalculator as TC
+import normalmath as NM
 
 print("Hello, welcome to the Calculator app. \nThis app can either do basic math, or calculate time.")
 
@@ -12,8 +13,8 @@ if choice == 1:
     num1 = int(num1)
     num2 = int(input("Please Input your second number"))
     operator = input("Please input your operator")
-
-
+    mathAns = NM.yaku(num1, num2, operator)
+    print(mathAns)
 
 elif choice==2:
     print("You have selected to convert time. How many Mins would you like to convert to Hours?")
