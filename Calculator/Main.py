@@ -4,7 +4,7 @@ import normalmath as NM
 
 print("Hello, welcome to the Calculator app. \nThis app can either do basic math, or calculate time.")
 
-choice = input("For Math, please press 1. For Time, please press 2.")
+choice = input("For Math, please press 1. For Time, please press 2.\n")
 
 choice = int(choice)
 

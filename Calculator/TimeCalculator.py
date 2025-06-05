@@ -5,7 +5,7 @@ import math
 def MinToHour(minuite):
     hour = 0
     if (int(minuite) < 60):
-        hour = minuite/60
+        hour = int(minuite)/60
         return hour, 0
     else:
         hour = math.floor(int(minuite)/60)
