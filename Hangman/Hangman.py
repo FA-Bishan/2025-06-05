@@ -13,12 +13,12 @@ for i in wordToGuess:
 # print (wordBreakdown.)
 # print (wordToGuess.find("a"))
 
-    print ("Welcome to Hangman!")
-    print ("This is a game where you guess a word by guessing individual letters.")
-    print ("If you get a letter wrong, you lose a life!")
-    print ("The game ends when you lose all lives, or you correctly guess the word! whichever comes first.")
-    print (f"You have {playerLives} lives, and this word has {playerGuesses.count("_")} letters!")
-    print ("Good Luck!")
+print ("Welcome to Hangman!")
+print ("This is a game where you guess a word by guessing individual letters.")
+print ("If you get a letter wrong, you lose a life!")
+print ("The game ends when you lose all lives, or you correctly guess the word! whichever comes first.")
+print (f"You have {playerLives} lives, and this word has {playerGuesses.count("_")} letters!")
+print ("Good Luck!")
 
 while gameRunning:
     # gameRunning = False
