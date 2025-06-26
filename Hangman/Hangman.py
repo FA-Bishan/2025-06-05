@@ -1,6 +1,9 @@
 import random as rand
+import WordDB
 
-wordToGuess = "aardvark"
+WordDB.wordDB[1]
+
+wordToGuess = WordDB.wordDB[rand.randint(0, len(WordDB.wordDB))]
 
 gameRunning = True
 wordBreakdown  = []
@@ -48,6 +51,7 @@ while gameRunning:
     if playerLives == 0:
         gameRunning = False
         print ("You have lost all lives.")
+        print (f"The word is {wordToGuess}")
         print ("The game is over!")
     
     if playerGuesses.count("_") == 0:
