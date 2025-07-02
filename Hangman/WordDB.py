@@ -5,5 +5,6 @@ wordDB = [
     "bear",
     "fish",
     "curry",
-    "aardvark"
+    "aardvark",
+    "tom"
 ]

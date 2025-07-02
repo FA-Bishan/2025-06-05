@@ -1,13 +1,15 @@
 import random as rand
 import WordDB
 
-WordDB.wordDB[1]
+WordDB.wordDB[]
+
 
 wordToGuess = WordDB.wordDB[rand.randint(0, len(WordDB.wordDB))]
 
 gameRunning = True
 wordBreakdown  = []
 playerGuesses = []
+letterGuesses = []
 playerLives = 10
 for i in wordToGuess:
     wordBreakdown.append(i)
@@ -31,6 +33,7 @@ while gameRunning:
     print (f"Here is the word to guess: {playerGuesses}")
 
     letterToGuess = input ("Please guess your a letter \n")
+    letterGuesses.append(letterToGuess)
 
     # if wordToGuess.count("letterToGuess", 0, len(wordToGuess)) > 0:
     #     print ("Letter Found")
@@ -46,6 +49,7 @@ while gameRunning:
 
     print (f"You guessed the letter {letterToGuess}. it appeared {guessOccurance} times in the word.")
     print (f"Here are your guesses {playerGuesses}")
+    print (f"You have guessed these letters: {letterGuesses}")
     print (f"You have {playerLives} left.")
 
     if playerLives == 0:
@@ -56,5 +60,6 @@ while gameRunning:
     
     if playerGuesses.count("_") == 0:
         gameRunning = False
+        # print (playerGuesses == wordBreakdown)
         print("You have correctly guessed the word!")
         print ("The game is over!")
